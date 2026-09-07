@@ -74,7 +74,7 @@ Both the 32-bit and 64-bit Java 8 Update 192 installations were identified and s
 
 ![Software Audit](evidence/software-check-2.png)
 
-![Software Audit](evidence/software-check-3.png)
+
 
 ---
 
@@ -86,7 +86,7 @@ The software was addressed as part of the remediation process.
 
 ### Finding Evidence
 
-![Software Audit](evidence/software-check1.png)
+
 ![Software Audit](evidence/software-check-3.png)
 
 ---
