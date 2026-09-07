@@ -87,6 +87,7 @@ The software was addressed as part of the remediation process.
 ### Finding Evidence
 
 ![Software Audit](evidence/software-check1.png)
+![Software Audit](evidence/software-check-3.png)
 
 ---
 
@@ -116,16 +117,36 @@ Windows update status was checked using PowerShell and recent security updates w
 
 ---
 
+
 # 3. Remediation Actions
 
-## Java Removal
+## 3.1 Java Removal
 
-The outdated Java 8 Update 192 installations were removed from the system.
+The outdated Java 8 Update 192 installations were removed from the system. Post-remediation checks confirmed that Java was no longer installed or available through the command line.
 
-After removal, the following command was used:
+### Remediation Evidence
 
-```powershell
-java -version
+![Java Removal Verification](evidence/java-remediation-verification.png)
+
+---
+
+## 3.2 Microsoft Silverlight Removal
+
+The obsolete Microsoft Silverlight installation was removed from the system. Registry checks were performed after remediation to verify that no Silverlight installation remained.
+
+### Remediation Evidence
+
+![Silverlight Removal Verification](evidence/silverlight-remediation-verification.png)
+
+---
+
+## 3.3 BitLocker Encryption
+
+BitLocker encryption was enabled on the Windows operating-system drive to protect data stored on the device.
+
+### Remediation Evidence
+
+![BitLocker Remediation Verification](evidence/bitlocker-remediation-verification.png)
 
 ## Skills Demonstrated
 
