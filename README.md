@@ -40,6 +40,93 @@ Get-HotFix
 
 The `evidence` directory contains screenshots documenting the initial audit, identified findings, remediation actions, and final hardened state.
 
+---
+
+# 1. Vulnerability Findings
+
+## Finding 1 — BitLocker Encryption Disabled
+
+The operating system drive was found to be fully decrypted.
+
+The audit showed:
+
+- Volume Status: FullyDecrypted
+- Encryption Percentage: 0%
+- Protection Status: Off
+
+This means data stored on the operating system drive was not protected by full-disk encryption.
+
+### Finding Evidence
+
+![Encryption and Administrator Account Check](evidence/encryption-admin-accounts-check.png)
+
+---
+
+## Finding 2 — Outdated Java Installation
+
+Java 8 Update 192 was identified as outdated software during the installed-software audit.
+
+Both the 32-bit and 64-bit Java 8 Update 192 installations were identified and subsequently removed.
+
+### Finding Evidence
+
+![Software Audit](evidence/software-check1.png)
+
+![Software Audit](evidence/software-check-2.png)
+
+![Software Audit](evidence/software-check-3.png)
+
+---
+
+## Finding 3 — Microsoft Silverlight
+
+Microsoft Silverlight was identified during the software audit as obsolete/end-of-life software.
+
+The software was addressed as part of the remediation process.
+
+### Finding Evidence
+
+![Software Audit](evidence/software-check1.png)
+
+---
+
+# 2. Security Checks That Passed
+
+## Windows Firewall
+
+The Windows Firewall was enabled across the Domain, Private, and Public profiles.
+
+### Firewall Evidence
+
+![Firewall Check](evidence/firewall-check1.png)
+
+![Firewall Check](evidence/firewall-check2.png)
+
+![Firewall Check](evidence/firewall-check3.png)
+
+---
+
+## Windows Update
+
+Windows update status was checked using PowerShell and recent security updates were present on the system.
+
+### Update Evidence
+
+![Windows Update Check](evidence/update-check.png)
+
+---
+
+# 3. Remediation Actions
+
+## Java Removal
+
+The outdated Java 8 Update 192 installations were removed from the system.
+
+After removal, the following command was used:
+
+```powershell
+java -version
+
 ## Skills Demonstrated
 
 * System security auditing
