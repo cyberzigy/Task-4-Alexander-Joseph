@@ -126,7 +126,7 @@ The outdated Java 8 Update 192 installations were removed from the system. Post-
 
 ### Remediation Evidence
 
-![Java Removal Verification](evidence/java-remediation-verification.png)
+![Java Removal Verification](evidence/java-remediation.png)
 
 ---
 
