@@ -136,7 +136,7 @@ The obsolete Microsoft Silverlight installation was removed from the system. Reg
 
 ### Remediation Evidence
 
-![Silverlight Removal Verification](evidence/silverlight-remediation-verification.png)
+![Silverlight Removal Verification](evidence/silverlight-remediation.png)
 
 ---
 
@@ -146,7 +146,7 @@ BitLocker encryption was enabled on the Windows operating-system drive to protec
 
 ### Remediation Evidence
 
-![BitLocker Remediation Verification](evidence/bitlocker-remediation-verification.png)
+![BitLocker Remediation Verification](evidence/bitlocker-remediation.png)
 
 ## Skills Demonstrated
 
@@ -159,5 +159,13 @@ BitLocker encryption was enabled on the Windows operating-system drive to protec
 * Security remediation
 * Verification and documentation
 
+  ## Conclusion
+
+This project demonstrated the process of auditing a Windows system, identifying security weaknesses, applying remediation, and collecting evidence to verify the security posture of the system.
+
+The exercise reinforced the importance of encryption, software lifecycle management, firewall configuration, patch management, and least-privilege principles in defensive cybersecurity.
+
 **Project:** Cybersecurity Project 4
 **Type:** Blue Team / Defensive Security Audit
+
+### Alexander Joseph
